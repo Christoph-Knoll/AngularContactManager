@@ -1,11 +1,12 @@
 <h2>Manage Contacts</h2>
-<svg class="bi bi-chevron-right" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
 
 <div>
     <button class="btn btn-outline-primary" style="margin-inline-end: 0.5em;"(click)="onLoadContacts()">Load Contacts</button>
     <button class="btn btn-outline-success" (click)="onCreateContact()">Create Contact</button>
 </div>
-<hr />
+
+<br>
+
 <div *ngIf="contacts?.length > 0 && editContact == undefined && deleteContact == undefined">
     <table class="table table-hover table-bordered">
         <th>Id</th>
@@ -72,7 +73,6 @@
         <label for="type">Type</label>
     
         <select [(ngModel)]="editContact.type" class="form-control" [ngModelOptions]="{standalone: true}">
-            <!-- Below line will be looped through the keys and for every key, set label as value from enum pair and key as value attribute of <option> tag-->
                   <option *ngFor="let key of typeSelectOptions" [value]="contactType[key]" [label]="contactType[key]"></option>
         </select>
     </div>
@@ -96,5 +96,5 @@
             style="margin-inline-end: 0.5em; min-width: 8em;">Cancel</button>
         <button (click)="onSubmit()" class="btn btn-outline-primary" style="min-width: 8em;">Submit</button>
     </div>
-    <hr/>
+    <br>
 </form>
