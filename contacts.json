@@ -1,18 +1,25 @@
 {
-    "contacts": [
-        {
-            "id": 0,
-            "type": "Private",
-            "name": "Granny (definetley not the wolf)",
-            "email": "granny@mail.com",
-            "address": "Somewhere in the deep forrest"
-        },
-        {
-            "id": 1,
-            "type": "Professional",
-            "name": "John Cleese",
-            "email": "john@mail.com",
-            "address": "idk"
-        }
-    ]
+  "contacts": [
+    {
+      "id": 0,
+      "type": "Private",
+      "name": "Granny (definetley not the wolf)",
+      "email": "granny@mail.com",
+      "address": "Somewhere in the deep forrest"
+    },
+    {
+      "id": 1,
+      "type": "Professional",
+      "name": "John Cleese",
+      "email": "john@mail.com",
+      "address": "idk"
+    },
+    {
+      "id": 2,
+      "type": "Professional",
+      "name": "dolf",
+      "email": "",
+      "address": ""
+    }
+  ]
 }

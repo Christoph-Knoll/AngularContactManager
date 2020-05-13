@@ -1,6 +1,7 @@
-export interface IContact { 
+import { ContactType } from "./contact-type"
+export interface IContact {
     id: number
-    type: IContact
+    type: ContactType
     name: string
     email: string
     address: string
